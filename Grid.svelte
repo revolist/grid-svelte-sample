@@ -1,7 +1,7 @@
 <script>
 	import { RevoGrid } from "@revolist/svelte-datagrid";
-	import { defineCustomElements } from "@revolist/revogrid/loader";
-
+	import { defineCustomElements } from "@revolist/revogrid/custom-element";
+	defineCustomElements();
 	function generateHeader(index) {
 	  const asciiFirstLetter = 65;
 	  const lettersCount = 26;
@@ -49,11 +49,9 @@
 	let headers;
 
 	// don't forget to define before usage
-	defineCustomElements().then(() => {
-	  const data = { ...generateFakeDataObject(100, 5) };
-	  source = data.source;
-	  headers = data.headers;
-	});
+	const data = { ...generateFakeDataObject(100, 5) };
+	source = data.source;
+	headers = data.headers;
 </script>
 
 <style>
