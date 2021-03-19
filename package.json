@@ -11,7 +11,7 @@
     "sirv-cli": "^1.0.11"
   },
   "dependencies": {
-    "@revolist/svelte-datagrid": "3.0.0-beta.4",
+    "@revolist/svelte-datagrid": "3.0.0-beta.5",
     "@stencil/core": "^2.4.0",
     "svelte": "^3.35.0"
   },
