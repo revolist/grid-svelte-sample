@@ -1,2 +1,5 @@
 # grid-svelte-sample
-Created with CodeSandbox
+
+Sample based on rollup and sirv.
+Run `npm run dev`.
+
